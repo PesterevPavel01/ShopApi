@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ShopApi.DAL;
 
 namespace ShopApi.Api.Controllers
 {
@@ -6,6 +7,8 @@ namespace ShopApi.Api.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        private readonly ApplicationDbContext _dbcontext;
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -13,9 +16,10 @@ namespace ShopApi.Api.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, ApplicationDbContext dbcontext)
         {
             _logger = logger;
+            _dbcontext = dbcontext;
         }
 
         [HttpGet]

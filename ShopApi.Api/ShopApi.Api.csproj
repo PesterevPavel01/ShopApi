@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ShopApi.DAL\ShopApi.DAL.csproj" />
+  </ItemGroup>
+
 </Project>

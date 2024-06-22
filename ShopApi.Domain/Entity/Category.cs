@@ -1,6 +1,8 @@
-﻿namespace ShopApi.Domain.Entity
+﻿using ShopApi.Domain.Interfaces;
+
+namespace ShopApi.Domain.Entity
 {
-    public class Category
+    public class Category : IEntityId<int>, IAuditable
     {
         public int Id { get; set; }
         public string NameCategory { get; set; } 
@@ -10,7 +12,7 @@
 
         public List<Product> purchaseOfGoods { get; set; }
 
-        //public List<Product> product { get; set; } = new List<Product>();
-
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }
