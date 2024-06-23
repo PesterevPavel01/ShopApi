@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using ShopApi.DAL;
 using ShopApi.Domain.Dto;
 using ShopApi.Domain.Interfaces.Services;
 

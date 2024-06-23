@@ -91,7 +91,7 @@ namespace ShopApi.Application.Services
             if (model == null) return null;
             try
             {
-                var employee = await _employeeInteractor.GetAll().FirstOrDefaultAsync(x => x.NameEmployee == model.NameEmployee);
+                var employee = await _employeeInteractor.GetAll().FirstOrDefaultAsync(x => x.Id == model.Id);
                 
                 if (employee == null)
                     return null;
