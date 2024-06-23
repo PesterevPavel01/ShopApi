@@ -1,5 +1,6 @@
 
 using ShopApi.DAL.DependencyInjection;
+using ShopApi.Application.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddDataAccessLayer(builder.Configuration);
+
+builder.Services.AddApplication();
 
 var app = builder.Build();
 

@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9BC24E7F-7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopApi.Domain", "ShopApi.Domain\ShopApi.Domain.csproj", "{FFA0260A-8A9D-45CC-AD9C-77182FBE6998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopApi.DAL", "ShopApi.DAL\ShopApi.DAL.csproj", "{72C189D3-B63D-4CCD-B2D2-739D5B005BDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopApi.DAL", "ShopApi.DAL\ShopApi.DAL.csproj", "{72C189D3-B63D-4CCD-B2D2-739D5B005BDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopApi.Application", "ShopApi.Application\ShopApi.Application.csproj", "{B1804081-D6E7-4DD1-8202-6860EFD2D28E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,12 +34,17 @@ Global
 		{72C189D3-B63D-4CCD-B2D2-739D5B005BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72C189D3-B63D-4CCD-B2D2-739D5B005BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72C189D3-B63D-4CCD-B2D2-739D5B005BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1804081-D6E7-4DD1-8202-6860EFD2D28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1804081-D6E7-4DD1-8202-6860EFD2D28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1804081-D6E7-4DD1-8202-6860EFD2D28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1804081-D6E7-4DD1-8202-6860EFD2D28E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FFA0260A-8A9D-45CC-AD9C-77182FBE6998} = {9BC24E7F-788E-4941-8135-F9ED5D15A947}
+		{B1804081-D6E7-4DD1-8202-6860EFD2D28E} = {9BC24E7F-788E-4941-8135-F9ED5D15A947}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76FE752B-49DD-4CEC-A003-B0AA1A534EE9}
