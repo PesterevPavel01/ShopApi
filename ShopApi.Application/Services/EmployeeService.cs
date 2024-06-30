@@ -190,7 +190,6 @@ namespace ShopApi.Application.Services
                 Id = employee.Id,
                 Password = employee.Password
             };
-
         }
     }
 }

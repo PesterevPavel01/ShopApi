@@ -9,15 +9,15 @@ namespace ShopApi.DAL.Configuration
         public void Configure(EntityTypeBuilder<Purchase> builder)
         {
             builder.HasKey(d => d.Id);
-            builder.Property(d => d.PurchaseType)
+            builder.Property(d => d.Type)
                 .HasMaxLength(40);
-            builder.Property(d => d.PurchasePrise)
+            builder.Property(d => d.Prise)
                 .HasMaxLength(40);
-            builder.Property(d => d.PurchaseType)
+            builder.Property(d => d.Type)
                 .HasMaxLength(40);
-            builder.Property(d => d.PurchaseDescription)
+            builder.Property(d => d.Description)
                 .HasMaxLength(40);
-            builder.Property(d => d.PurchaseVolume)
+            builder.Property(d => d.Volume)
                 .HasMaxLength(40);
         }
     }

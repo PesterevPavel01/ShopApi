@@ -16,6 +16,9 @@ namespace ShopApi.Application.DependencyInjection
         private static void InitServices(this IServiceCollection services)
         {
             services.AddScoped<ICommonService<EmployeeDto,int>, EmployeeService>();
+            services.AddScoped<ICommonService<CategoryDto, int>, CategoryService>();
+            services.AddScoped<ICommonService<ProductDto, int>, ProductService>();
+            services.AddScoped<ICommonService<BascketDto, int>, BascketService>();
         }
     }
 }

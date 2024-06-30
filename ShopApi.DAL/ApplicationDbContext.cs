@@ -8,7 +8,7 @@ namespace ShopApi.DAL
     public class ApplicationDbContext:DbContext
     {
         public DbSet<Category> Categories { get; set; } = null!;
-        public DbSet<Employee> Employees { get; set; } = null!;
+        public DbSet<Product> Employees { get; set; } = null!;
         public DbSet<Provider> Providers { get; set; } = null!;
         public DbSet<Purchase> Purchase { get; set; } = null!;
         public DbSet<Product> Products { get; set; } = null!;

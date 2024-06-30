@@ -11,7 +11,7 @@ namespace ShopApi.Domain.Entity
         public string NameProvider { get; set; }
         public string additionally { get; set; }
 
-        public List<Purchase> purchaseOfGoods{ get; set; }
+        public List<Purchase> Purchase{ get; set; }
 
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }

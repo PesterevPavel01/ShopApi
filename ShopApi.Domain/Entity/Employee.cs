@@ -11,7 +11,11 @@ namespace ShopApi.Domain.Entity
         public string Password { get; set; }
         public string Status { get; set; }
 
+        public List<Bascket> Basckets { get; set; }
+
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+
+        public Employee() { }
     }
 }

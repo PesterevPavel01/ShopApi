@@ -14,6 +14,11 @@ namespace ShopApi.DAL.Configuration
             builder.Property(d => d.Login).IsRequired().HasMaxLength(50);
             builder.Property(d => d.Password).IsRequired().HasMaxLength(50);
             builder.Property(d => d.Status).HasDefaultValue("user").HasMaxLength(50);
+
+            builder.HasMany<Bascket>(x => x.Basckets)
+                .WithOne(x => x.Employee)
+                .HasForeignKey(x => x.EmployeeId)
+                .HasPrincipalKey(x => x.Id);
         }
     }
 }
